@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Clipdeck",
+  "version": "1.0",
+  "description": "Saves each new slide shown in a Teams meeting tab into a Word document.",
+  "minimum_chrome_version": "116",
+  "permissions": ["tabCapture", "offscreen", "activeTab", "scripting", "downloads", "storage"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_popup": "popup.html", "default_title": "Clipdeck" }
+}
